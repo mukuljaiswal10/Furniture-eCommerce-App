@@ -5,6 +5,7 @@ import { FaHeart, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 import { IoChevronDown } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
+import CartDrawer from "./CartDrawer";
 export default function MobileHeader() {
   const [openMenu, setOpenMenu] = useState(false);
   //   const [living, setLiving] = useState(false);
@@ -31,6 +32,8 @@ export default function MobileHeader() {
     setActive(name);
   };
 
+  const [openCart,setOpenCart]=useState(false);
+
   return (
     <>
       {/* ================= MOBILE TOP HEADER ================= */}
@@ -48,7 +51,7 @@ export default function MobileHeader() {
           </div>
 
           {/* Cart */}
-          <div className="relative flex items-center gap-2 border border-[#d2d1d1] px-4 py-2 rounded-md group">
+          <div onClick={()=> setOpenCart(true)} className="relative flex items-center gap-2 border border-[#d2d1d1] px-4 py-2 rounded-md group">
             {/* Badge */}
             <span
               className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2
@@ -63,6 +66,7 @@ export default function MobileHeader() {
             <span className="text-sm text-[14px] font-medium group-hover:text-[#C09578] duration-[1s]">
               Rs.0.00
             </span>
+            <CartDrawer open={openCart} setOpen={setOpenCart} />
           </div>
 
           {/* Hamburger */}
