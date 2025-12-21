@@ -1,0 +1,23 @@
+#banner-slider .slick-dots
+{
+    bottom: 10px !important;
+}
+#banner-slider .slick-dots li.slick-active button:before {
+    opacity:1 !important;
+    color:#C09578 !important;
+}
+#banner-slider .slick-dots li button:before {
+    content: "•";
+    text-align: center;
+    opacity:1 !important;
+    color:white !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 20px;
+    height: 20px;
+    font-size: 15px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
