@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image";
 import BannerSection from './Components/pages/home-components/BannerSection';
 import CollectionSection from './Components/pages/home-components/CollectionSection';
 import NavTabsSection from './Components/pages/home-components/NavTabsSection';

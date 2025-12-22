@@ -1,6 +1,7 @@
 
 import Footer from "./Components/Common/Footer";
 import Header from "./Components/Common/Header";
+
 import ScrollToTop from "./Components/Common/ScrollToTop";
 import "./globals.css";
 import { Rubik } from "next/font/google";
