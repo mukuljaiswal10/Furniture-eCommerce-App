@@ -32,13 +32,13 @@ export default function Header() {
           </div>
 
           <div className="text-[12px] text-right">
-            <Link href={"#"} className="hover:text-[#C09578]">
+            <Link href={"/login-register"} className="hover:text-[#C09578]">
               Login
             </Link>
 
             <span>&nbsp;/&nbsp;</span>
 
-            <Link href={"#"} className="hover:text-[#C09578]">
+            <Link href={"/login-register"} className="hover:text-[#C09578]">
               Register
             </Link>
           </div>
@@ -132,7 +132,7 @@ export default function Header() {
             after:scale-x-100
           "
             >
-              Home
+              <Link href={"/"}>Home</Link>
             </li>
 
             {/* living-menu*/}
@@ -270,38 +270,20 @@ export default function Header() {
               {/* Mega Menu */}
               <div
                 className="absolute left-1/2 top-full -translate-x-1/2 mt-6
-              w-[900px] bg-white border shadow-lg
+              w-[200px] bg-white border shadow-lg
               opacity-0 invisible
               group-hover:opacity-100 group-hover:visible
               transition-all duration-500 ease-out z-50
             "
               >
-                <div className="grid grid-cols-3 gap-10 p-8 text-[14px]">
+                <div className="p-2 text-[14px]">
                   <div>
-                    <h4 className="font-semibold mb-3">Shop Pages</h4>
+                    {/* <h4 className="font-semibold mb-3">Shop Pages</h4> */}
                     <ul className="space-y-2 text-gray-600">
-                      <li>Shop</li>
-                      <li>Product Detail</li>
-                      <li>Cart</li>
-                      <li>Checkout</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-3">Account</h4>
-                    <ul className="space-y-2 text-gray-600">
-                      <li>Login</li>
-                      <li>Register</li>
-                      <li>My Account</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-3">Other Pages</h4>
-                    <ul className="space-y-2 text-gray-600">
-                      <li>About Us</li>
-                      <li>Contact Us</li>
-                      <li>FAQ</li>
+                      <li><Link href={"/about-us"}>About US</Link></li>
+                      <li><Link href={"#"}>Cart</Link></li>
+                      <li><Link href={"#"}>Checkout</Link></li>
+                      <li><Link href={"#"}>Frequently Question</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -320,10 +302,11 @@ export default function Header() {
             hover:after:scale-x-100
           "
             >
-              Contact Us
+              <Link href={"/contact-us"}>Contact Us</Link>
             </li>
           </ul>
         </div>
+        <hr className="text-[#d2d1d1]" />
       </nav>
       {/* end */}
 

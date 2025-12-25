@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-[#555] text-[14px] leading-7">
+    <footer className="bg-white text-[#555] text-[14px] leading-7 border bordet-t border-gray-500">
       {/* ================= TOP FOOTER ================= */}
       <div className="max-w-[1320px] mx-auto px-4 pt-16 pb-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-12">
@@ -55,12 +55,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="hover:text-[#b8895b] transition">
+                <Link href={"/about-us"} className="hover:text-[#b8895b] transition">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#b8895b] transition">
+                <Link href={"/contact-us"} className="hover:text-[#b8895b] transition">
                   Contact Us
                 </Link>
               </li>
@@ -141,7 +141,7 @@ export default function Footer() {
         <div className="max-w-[1320px] mx-auto px-4 py-10 text-center">
           {/* Pages Menu Center */}
           <div className="flex flex-wrap justify-center gap-x-10 gap-y-3 mb-6">
-            <Link href="#" className="hover:text-[#b8895b] transition">
+            <Link href={"/"} className="hover:text-[#b8895b] transition">
               Home
             </Link>
             <Link href="#" className="hover:text-[#b8895b] transition">
