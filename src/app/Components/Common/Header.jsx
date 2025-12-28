@@ -10,13 +10,11 @@ import { IoChevronDown } from "react-icons/io5";
 import MobileHeader from "./MobileHeader";
 
 export default function Header() {
-
   return (
     <>
       {/* desktop-header */}
 
       <header className={`bg-white lg:block hidden`}>
-
         {/* first row */}
         <div
           className={`max-w-[1320px] mx-auto grid grid-cols-2 justify-content-between items-center py-2 px-5`}
@@ -76,9 +74,7 @@ export default function Header() {
 
             {/* add to cart button */}
 
-            <div
-              className="relative flex items-center gap-3 border border-[#e6e6e6] px-6 py-2 rounded-md cursor-pointer group"
-            >
+            <div className="relative flex items-center gap-3 border border-[#e6e6e6] px-6 py-2 rounded-md cursor-pointer group">
               {/* COUNT on LEFT BORDER */}
               <span
                 className="absolute left-0 top-1/2  -translate-x-1/2
@@ -133,6 +129,20 @@ export default function Header() {
           "
             >
               <Link href={"/"}>Home</Link>
+            </li>
+
+            <li
+              className="relative cursor-pointer
+            after:content-['']
+            after:absolute after:left-0 after:-bottom-2
+            after:w-full after:h-[2px]
+            after:bg-[#c1a27a]
+            after:scale-x-0 after:origin-left
+            after:transition-transform after:duration-300
+            hover:after:scale-x-100
+          "
+            >
+              <Link href={"/product"}>Product</Link>
             </li>
 
             {/* living-menu*/}
@@ -280,10 +290,18 @@ export default function Header() {
                   <div>
                     {/* <h4 className="font-semibold mb-3">Shop Pages</h4> */}
                     <ul className="space-y-2 text-gray-600">
-                      <li><Link href={"/about-us"}>About US</Link></li>
-                      <li><Link href={"#"}>Cart</Link></li>
-                      <li><Link href={"#"}>Checkout</Link></li>
-                      <li><Link href={"#"}>Frequently Question</Link></li>
+                      <li>
+                        <Link href={"/about-us"}>About US</Link>
+                      </li>
+                      <li>
+                        <Link href={"#"}>Cart</Link>
+                      </li>
+                      <li>
+                        <Link href={"#"}>Checkout</Link>
+                      </li>
+                      <li>
+                        <Link href={"#"}>Frequently Question</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
