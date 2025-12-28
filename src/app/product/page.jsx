@@ -22,7 +22,7 @@ export default function Product() {
   return (
     <>
       <Breadcrumb title="Product" />
-      <div className="max-w-[1320px] mx-auto mb-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 px-5">
+      <div className="max-w-[1320px] mx-auto mb-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 px-5">
         {
             productData.map((obj,index)=><ProductItems key={index} data={obj}/>)
         }
@@ -79,10 +79,3 @@ function ProductItems({data}) {
   );
 }
 
-// import React from 'react'
-
-// export default function page() {
-//   return (
-//     <div>page</div>
-//   )
-// }
